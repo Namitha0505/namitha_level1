@@ -10,4 +10,5 @@ printf(“enter d value ”);
 scanf(“%f”,&d);
 volume=((h*d*b)+(d/b))/3;
 printf(“ volume of tromboloid is %f ”,volume);
+return 0;
 }
