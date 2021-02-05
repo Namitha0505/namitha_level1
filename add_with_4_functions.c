@@ -6,8 +6,6 @@ int main()
 {
   int a,b,c,d,sum;
   a=inp(b,c);
-  printf(“enter two numbers”);
-  scanf(“%d%d”,&b,&c);
   sum=add(b,c);
   d=out(b,c);
   printf(“%d is the sum”,sum);
@@ -18,7 +16,9 @@ return m,n;
 }
 int add(int p,int q)
 {
-return(p+q);
+ printf("enter two numbers");
+ scanf("%d%d",&p,&q);
+ return(p+q);
 }
 int out(int x,int y);
 {
