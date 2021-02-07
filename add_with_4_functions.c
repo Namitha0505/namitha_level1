@@ -1,26 +1,26 @@
 #include<stdio.h>
-int inp(int,int);
-int out(int,int);
-int add(int,int);
+float inp(float,float);
+float out(float,float);
+float add(float,float);
 int main()
 {
-  int a,b,c,d,sum;
+  float a,b,c,d,sum;
   a=inp(b,c);
   sum=add(b,c);
   d=out(b,c);
-  printf(“%d is the sum”,sum);
+  printf(“The sum is %f”,sum);
 }
-int inp(int m,int n)
+float inp(float m,float n)
 {
 return m,n;
 }
-int add(int p,int q)
+float add(float p,float q)
 {
  printf("enter two numbers");
- scanf("%d%d",&p,&q);
+ scanf("%f%f",&p,&q);
  return(p+q);
 }
-int out(int x,int y);
+float out(float x,float y)
 {
 return 0;
 }
