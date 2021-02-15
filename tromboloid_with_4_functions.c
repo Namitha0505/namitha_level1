@@ -1,31 +1,37 @@
+
 #include<stdio.h>
-float inp(float,float,float);
+float inp();
 float out(float);
 float res(float,float,float);
 int main()
 {
-float a,h,b,d,vol,q,p;
-a=inp(h,b,d);
-vol=res(h,b,d);
+float a,e,c,p,h,b,d,q,v;
+printf(“enter the value of h”);
+a=inp();
+printf(“enter the value of d”);
+e=inp();
+printf(“enter the value of b”);
+c=inp();
+p=res(a,e,c);
 q=out(p);
-printf(“the volume of tromboloid is %f”,vol);
+return 0;
 }
-float inp(float  x,float  y,float  z)
+float inp()
 {
-return (x,y,z);
+float x;
+scanf(“%f”,&x);
+return x;
 }
 float res(float h,float  b,float d)
 {
-printf(“enter h value”);
-scanf(“%f”,&h);
-printf(“enter b value”);
-scanf(“%f”,&b);
-printf(“enter d value”);
-scanf(“%f”,&d);
-return ((h*b*d)+(d/b))/3;
+float volume;
+volume=((h*b*d)+(d/b))/3;
+return volume;
 }
-float out(float s)
+float out(float volume)
 {
+printf(“volume of tromboloid is %f”,volume);
 return 0;
 }
+
 
