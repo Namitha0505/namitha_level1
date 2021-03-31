@@ -10,8 +10,7 @@ inp ()
   return num;
 }
 
-void
-inp_array (int n, int a[n])
+void inp_array (int n, int a[n])
 {
   int i;
   for (i = 0; i < n; i++)
@@ -22,8 +21,7 @@ inp_array (int n, int a[n])
 
 }
 
-int
-add_n (int n, int a[n])
+int add_n (int n, int a[n])
 {
   int sum = 0;
   for (int i = 0; i < n; i++)
@@ -33,8 +31,7 @@ add_n (int n, int a[n])
   return sum;
 }
 
-int
-out (int n, int a[n], int sum)
+int out (int n, int a[n], int sum)
 {
 
 
