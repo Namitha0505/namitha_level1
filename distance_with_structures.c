@@ -1,23 +1,46 @@
 //WAP to find the distance between two points using structures and 4 functions.
+
 #include<stdio.h>
 #include<math.h>
-struct point{
-int x,y;
+struct point
+{
+  float x, y;
 };
-int distance(struct point m,struct point n)
+struct point m, n;
+float
+distance (struct point m, struct point n)
 {
-int distance;
-distance=sqrt((m.x-n.x)*(m.x-n.x)+(m.y-n.y)*(m.y-n.y));
-return distance;
+  float dist;
+  dist = sqrt ((m.x - n.x) * (m.x - n.x) + (m.y - n.y) * (m.y - n.y));
+  return dist;
 }
-int main()
+
+float
+input ()
 {
-struct point m,n;
-printf(“enter coordinate of point m”);
-scanf(“%d%d”,&m.x,&m.y);
-printf(“enter coordinate of point n”);
-scanf(“%d%d”,&n.x,&n.y);
-printf(“distance between points m and n %d”,distance(m,n));
-return 0;
+  printf ("enter the x coordinate of point A-\n");
+  scanf ("%f", &m.x);
+  printf ("enter the y coordinate of point A-\n");
+  scanf ("%f", &m.y);
+  printf ("enter the x coordinate of point B-\n");
+  scanf ("%f", &n.x);
+  printf ("enter the y coordinate of point B-\n");
+  scanf ("%f", &n.y);
+}
+
+float
+output (float dist)
+{
+  printf ("Distance between point A and point B:%f\n", dist);
+}
+
+int
+main ()
+{
+  float dist;
+  input ();
+  dist = distance (m, n);
+  output (dist);
+  return 0;
 }
 
